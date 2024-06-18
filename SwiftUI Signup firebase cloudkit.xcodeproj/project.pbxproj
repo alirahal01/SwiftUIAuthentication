@@ -1,0 +1,658 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9F879FA72C1CC889000C8CAA /* SwiftUI_Signup_firebase_cloudkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FA62C1CC889000C8CAA /* SwiftUI_Signup_firebase_cloudkitApp.swift */; };
+		9F879FA92C1CC889000C8CAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FA82C1CC889000C8CAA /* ContentView.swift */; };
+		9F879FAB2C1CC88A000C8CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F879FAA2C1CC88A000C8CAA /* Assets.xcassets */; };
+		9F879FAE2C1CC88A000C8CAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F879FAD2C1CC88A000C8CAA /* Preview Assets.xcassets */; };
+		9F879FB02C1CC88A000C8CAA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FAF2C1CC88A000C8CAA /* Persistence.swift */; };
+		9F879FB32C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FB12C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkit.xcdatamodeld */; };
+		9F879FBF2C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FBE2C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitTests.swift */; };
+		9F879FC92C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FC82C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitUITests.swift */; };
+		9F879FCB2C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FCA2C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitUITestsLaunchTests.swift */; };
+		9F879FDA2C1CC93E000C8CAA /* VisualEffectBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FD82C1CC93E000C8CAA /* VisualEffectBlur.swift */; };
+		9F879FDB2C1CC93E000C8CAA /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FD92C1CC93E000C8CAA /* ImagePicker.swift */; };
+		9F879FDE2C20C2F8000C8CAA /* GradientText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FDD2C20C2F8000C8CAA /* GradientText.swift */; };
+		9F879FE02C20CA67000C8CAA /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FDF2C20CA67000C8CAA /* GradientButton.swift */; };
+		9F879FE42C20CA95000C8CAA /* TextFieldIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FE32C20CA95000C8CAA /* TextFieldIcon.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9F879FBB2C1CC88A000C8CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F879F9B2C1CC889000C8CAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F879FA22C1CC889000C8CAA;
+			remoteInfo = "SwiftUI Signup firebase cloudkit";
+		};
+		9F879FC52C1CC88A000C8CAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9F879F9B2C1CC889000C8CAA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9F879FA22C1CC889000C8CAA;
+			remoteInfo = "SwiftUI Signup firebase cloudkit";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9F879FA32C1CC889000C8CAA /* SwiftUI Signup firebase cloudkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Signup firebase cloudkit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F879FA62C1CC889000C8CAA /* SwiftUI_Signup_firebase_cloudkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Signup_firebase_cloudkitApp.swift; sourceTree = "<group>"; };
+		9F879FA82C1CC889000C8CAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9F879FAA2C1CC88A000C8CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9F879FAD2C1CC88A000C8CAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		9F879FAF2C1CC88A000C8CAA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		9F879FB22C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SwiftUI_Signup_firebase_cloudkit.xcdatamodel; sourceTree = "<group>"; };
+		9F879FB42C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftUI_Signup_firebase_cloudkit.entitlements; sourceTree = "<group>"; };
+		9F879FB52C1CC88A000C8CAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F879FBA2C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI Signup firebase cloudkitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F879FBE2C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Signup_firebase_cloudkitTests.swift; sourceTree = "<group>"; };
+		9F879FC42C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI Signup firebase cloudkitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F879FC82C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Signup_firebase_cloudkitUITests.swift; sourceTree = "<group>"; };
+		9F879FCA2C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Signup_firebase_cloudkitUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F879FD82C1CC93E000C8CAA /* VisualEffectBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisualEffectBlur.swift; sourceTree = "<group>"; };
+		9F879FD92C1CC93E000C8CAA /* ImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		9F879FDD2C20C2F8000C8CAA /* GradientText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GradientText.swift; path = ../../../../Documents/GradientText.swift; sourceTree = "<group>"; };
+		9F879FDF2C20CA67000C8CAA /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
+		9F879FE32C20CA95000C8CAA /* TextFieldIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldIcon.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9F879FA02C1CC889000C8CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F879FB72C1CC88A000C8CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F879FC12C1CC88A000C8CAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9F879F9A2C1CC889000C8CAA = {
+			isa = PBXGroup;
+			children = (
+				9F879FA52C1CC889000C8CAA /* SwiftUI Signup firebase cloudkit */,
+				9F879FBD2C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitTests */,
+				9F879FC72C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitUITests */,
+				9F879FA42C1CC889000C8CAA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9F879FA42C1CC889000C8CAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9F879FA32C1CC889000C8CAA /* SwiftUI Signup firebase cloudkit.app */,
+				9F879FBA2C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitTests.xctest */,
+				9F879FC42C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9F879FA52C1CC889000C8CAA /* SwiftUI Signup firebase cloudkit */ = {
+			isa = PBXGroup;
+			children = (
+				9F879FD72C1CC93E000C8CAA /* Helpers */,
+				9F879FA62C1CC889000C8CAA /* SwiftUI_Signup_firebase_cloudkitApp.swift */,
+				9F879FA82C1CC889000C8CAA /* ContentView.swift */,
+				9F879FDC2C20C2EA000C8CAA /* Views */,
+				9F879FAA2C1CC88A000C8CAA /* Assets.xcassets */,
+				9F879FAF2C1CC88A000C8CAA /* Persistence.swift */,
+				9F879FB42C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkit.entitlements */,
+				9F879FB52C1CC88A000C8CAA /* Info.plist */,
+				9F879FB12C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkit.xcdatamodeld */,
+				9F879FAC2C1CC88A000C8CAA /* Preview Content */,
+			);
+			path = "SwiftUI Signup firebase cloudkit";
+			sourceTree = "<group>";
+		};
+		9F879FAC2C1CC88A000C8CAA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				9F879FAD2C1CC88A000C8CAA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9F879FBD2C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitTests */ = {
+			isa = PBXGroup;
+			children = (
+				9F879FBE2C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitTests.swift */,
+			);
+			path = "SwiftUI Signup firebase cloudkitTests";
+			sourceTree = "<group>";
+		};
+		9F879FC72C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9F879FC82C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitUITests.swift */,
+				9F879FCA2C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitUITestsLaunchTests.swift */,
+			);
+			path = "SwiftUI Signup firebase cloudkitUITests";
+			sourceTree = "<group>";
+		};
+		9F879FD72C1CC93E000C8CAA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9F879FD82C1CC93E000C8CAA /* VisualEffectBlur.swift */,
+				9F879FD92C1CC93E000C8CAA /* ImagePicker.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9F879FDC2C20C2EA000C8CAA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9F879FDD2C20C2F8000C8CAA /* GradientText.swift */,
+				9F879FDF2C20CA67000C8CAA /* GradientButton.swift */,
+				9F879FE32C20CA95000C8CAA /* TextFieldIcon.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9F879FA22C1CC889000C8CAA /* SwiftUI Signup firebase cloudkit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F879FCE2C1CC88A000C8CAA /* Build configuration list for PBXNativeTarget "SwiftUI Signup firebase cloudkit" */;
+			buildPhases = (
+				9F879F9F2C1CC889000C8CAA /* Sources */,
+				9F879FA02C1CC889000C8CAA /* Frameworks */,
+				9F879FA12C1CC889000C8CAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SwiftUI Signup firebase cloudkit";
+			productName = "SwiftUI Signup firebase cloudkit";
+			productReference = 9F879FA32C1CC889000C8CAA /* SwiftUI Signup firebase cloudkit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9F879FB92C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F879FD12C1CC88A000C8CAA /* Build configuration list for PBXNativeTarget "SwiftUI Signup firebase cloudkitTests" */;
+			buildPhases = (
+				9F879FB62C1CC88A000C8CAA /* Sources */,
+				9F879FB72C1CC88A000C8CAA /* Frameworks */,
+				9F879FB82C1CC88A000C8CAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F879FBC2C1CC88A000C8CAA /* PBXTargetDependency */,
+			);
+			name = "SwiftUI Signup firebase cloudkitTests";
+			productName = "SwiftUI Signup firebase cloudkitTests";
+			productReference = 9F879FBA2C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9F879FC32C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F879FD42C1CC88A000C8CAA /* Build configuration list for PBXNativeTarget "SwiftUI Signup firebase cloudkitUITests" */;
+			buildPhases = (
+				9F879FC02C1CC88A000C8CAA /* Sources */,
+				9F879FC12C1CC88A000C8CAA /* Frameworks */,
+				9F879FC22C1CC88A000C8CAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9F879FC62C1CC88A000C8CAA /* PBXTargetDependency */,
+			);
+			name = "SwiftUI Signup firebase cloudkitUITests";
+			productName = "SwiftUI Signup firebase cloudkitUITests";
+			productReference = 9F879FC42C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9F879F9B2C1CC889000C8CAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					9F879FA22C1CC889000C8CAA = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+					9F879FB92C1CC88A000C8CAA = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 9F879FA22C1CC889000C8CAA;
+					};
+					9F879FC32C1CC88A000C8CAA = {
+						CreatedOnToolsVersion = 15.0.1;
+						TestTargetID = 9F879FA22C1CC889000C8CAA;
+					};
+				};
+			};
+			buildConfigurationList = 9F879F9E2C1CC889000C8CAA /* Build configuration list for PBXProject "SwiftUI Signup firebase cloudkit" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9F879F9A2C1CC889000C8CAA;
+			productRefGroup = 9F879FA42C1CC889000C8CAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9F879FA22C1CC889000C8CAA /* SwiftUI Signup firebase cloudkit */,
+				9F879FB92C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitTests */,
+				9F879FC32C1CC88A000C8CAA /* SwiftUI Signup firebase cloudkitUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9F879FA12C1CC889000C8CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F879FAE2C1CC88A000C8CAA /* Preview Assets.xcassets in Resources */,
+				9F879FAB2C1CC88A000C8CAA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F879FB82C1CC88A000C8CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F879FC22C1CC88A000C8CAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9F879F9F2C1CC889000C8CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F879FDA2C1CC93E000C8CAA /* VisualEffectBlur.swift in Sources */,
+				9F879FE02C20CA67000C8CAA /* GradientButton.swift in Sources */,
+				9F879FDE2C20C2F8000C8CAA /* GradientText.swift in Sources */,
+				9F879FB02C1CC88A000C8CAA /* Persistence.swift in Sources */,
+				9F879FA92C1CC889000C8CAA /* ContentView.swift in Sources */,
+				9F879FE42C20CA95000C8CAA /* TextFieldIcon.swift in Sources */,
+				9F879FDB2C1CC93E000C8CAA /* ImagePicker.swift in Sources */,
+				9F879FA72C1CC889000C8CAA /* SwiftUI_Signup_firebase_cloudkitApp.swift in Sources */,
+				9F879FB32C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkit.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F879FB62C1CC88A000C8CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F879FBF2C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F879FC02C1CC88A000C8CAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F879FCB2C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitUITestsLaunchTests.swift in Sources */,
+				9F879FC92C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkitUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9F879FBC2C1CC88A000C8CAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F879FA22C1CC889000C8CAA /* SwiftUI Signup firebase cloudkit */;
+			targetProxy = 9F879FBB2C1CC88A000C8CAA /* PBXContainerItemProxy */;
+		};
+		9F879FC62C1CC88A000C8CAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9F879FA22C1CC889000C8CAA /* SwiftUI Signup firebase cloudkit */;
+			targetProxy = 9F879FC52C1CC88A000C8CAA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		9F879FCC2C1CC88A000C8CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9F879FCD2C1CC88A000C8CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9F879FCF2C1CC88A000C8CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI Signup firebase cloudkit/SwiftUI_Signup_firebase_cloudkit.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Signup firebase cloudkit/Preview Content\"";
+				DEVELOPMENT_TEAM = F729H4D7P8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI Signup firebase cloudkit/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9F879FD02C1CC88A000C8CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI Signup firebase cloudkit/SwiftUI_Signup_firebase_cloudkit.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI Signup firebase cloudkit/Preview Content\"";
+				DEVELOPMENT_TEAM = F729H4D7P8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI Signup firebase cloudkit/Info.plist";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		9F879FD22C1CC88A000C8CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F729H4D7P8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dev.todo.SwiftUI-Signup-firebase-cloudkitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI Signup firebase cloudkit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI Signup firebase cloudkit";
+			};
+			name = Debug;
+		};
+		9F879FD32C1CC88A000C8CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F729H4D7P8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dev.todo.SwiftUI-Signup-firebase-cloudkitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftUI Signup firebase cloudkit.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftUI Signup firebase cloudkit";
+			};
+			name = Release;
+		};
+		9F879FD52C1CC88A000C8CAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F729H4D7P8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dev.todo.SwiftUI-Signup-firebase-cloudkitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SwiftUI Signup firebase cloudkit";
+			};
+			name = Debug;
+		};
+		9F879FD62C1CC88A000C8CAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F729H4D7P8;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dev.todo.SwiftUI-Signup-firebase-cloudkitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SwiftUI Signup firebase cloudkit";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9F879F9E2C1CC889000C8CAA /* Build configuration list for PBXProject "SwiftUI Signup firebase cloudkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F879FCC2C1CC88A000C8CAA /* Debug */,
+				9F879FCD2C1CC88A000C8CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F879FCE2C1CC88A000C8CAA /* Build configuration list for PBXNativeTarget "SwiftUI Signup firebase cloudkit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F879FCF2C1CC88A000C8CAA /* Debug */,
+				9F879FD02C1CC88A000C8CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F879FD12C1CC88A000C8CAA /* Build configuration list for PBXNativeTarget "SwiftUI Signup firebase cloudkitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F879FD22C1CC88A000C8CAA /* Debug */,
+				9F879FD32C1CC88A000C8CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9F879FD42C1CC88A000C8CAA /* Build configuration list for PBXNativeTarget "SwiftUI Signup firebase cloudkitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F879FD52C1CC88A000C8CAA /* Debug */,
+				9F879FD62C1CC88A000C8CAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9F879FB12C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9F879FB22C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkit.xcdatamodel */,
+			);
+			currentVersion = 9F879FB22C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkit.xcdatamodel */;
+			path = SwiftUI_Signup_firebase_cloudkit.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9F879F9B2C1CC889000C8CAA /* Project object */;
+}
