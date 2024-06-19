@@ -7,8 +7,9 @@
 
 import SwiftUI
 import AudioToolbox
+import FirebaseAuth
 
-struct ContentView: View {
+struct SignupView: View {
 
     @State private var email: String = ""
     @State private var password: String = ""
@@ -17,17 +18,20 @@ struct ContentView: View {
     @State private var emailIconBounce: Bool = false
     @State private var passwordIconBounce: Bool = false
     
+    @State private var showProfileView: Bool = false
+    @State private var signUpToggle: Bool = true
+    
     private let generator = UISelectionFeedbackGenerator()
     
     var body: some View {
         ZStack {
-            Image("background-3")
+            Image(signUpToggle ? "background-3" : "background-1")
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 VStack(alignment: .leading, spacing: 16) {
-                    Text("Sign up")
+                    Text(signUpToggle ? "Sign up" : "Sign in")
                         .font(Font.largeTitle.bold())
                         .foregroundColor(.white)
                     Text("Access to 120+ hours of courses , turtorials amd live streams")
@@ -103,29 +107,59 @@ struct ContentView: View {
                             })
                         }
                     }
-                    GradientButton()
-                    Text("By clicking on sign up, you agree to our terms of service and privacy policy")
-                        .font(.footnote)
-                        .foregroundColor(Color.white.opacity(0.7))
-                    
-                    Rectangle()
-                        .frame(height: 1)
-                        .foregroundColor(Color.white.opacity(0.1))
-                    
+                    GradientButton(buttonTitle: signUpToggle ? "Create account" : "Sign in", buttonAction: {
+                        generator.selectionChanged()
+                        self.signup()
+                    })
+                    .onAppear {
+                        Auth.auth().addStateDidChangeListener {
+                            auth, user in
+                            if user != nil {
+                                showProfileView.toggle()
+                            }
+                        }
+                    }
+                    if signUpToggle
+                    {
+                        Text("By clicking on sign up, you agree to our terms of service and privacy policy")
+                            .font(.footnote)
+                            .foregroundColor(Color.white.opacity(0.7))
+                        
+                        Rectangle()
+                            .frame(height: 1)
+                            .foregroundColor(Color.white.opacity(0.1))
+                        
+                    }
                     VStack(alignment: .leading, spacing: 16) {
                         Button {
-                            print("Switch to sign in")
+                            withAnimation(.easeInOut(duration: 0.7)) {
+                                signUpToggle.toggle()
+                            }
                         } label: {
-                            Text("Already have an account")
+                            Text(signUpToggle ? "Already have an account" : "Done have an account")
                                 .font(.footnote)
                                 .foregroundColor(.white)
                                 .opacity(0.7)
-                            GradientText(text: "Sign In")
+                            GradientText(text: signUpToggle ? "Sign In" : "Sign up")
                                 .font(Font.footnote.bold())
+                        }
+                    }
+                    
+                    if !signUpToggle {
+                        Button {
+                            print("Send reset password email")
+                        } label: {
+                            HStack(spacing: 4) {
+                                Text("Forgot password")
+                                    .font(.footnote)
+                                    .foregroundColor(.white.opacity(0.7))
+                                    GradientText(text: "Reset password")
+                                    .font(.largeTitle)
+                                    .bold()
+                            }
                         }
 
                     }
-                    
                 }
                 .padding(20)
             }
@@ -140,9 +174,21 @@ struct ContentView: View {
             .cornerRadius(30.0)
             .padding(.horizontal)
         }
+//        .fullScreenCover(isPresented: $showProfileView) {
+//            ProfileView()
+//        }
+    }
+    func signup() {
+        Auth.auth().createUser(withEmail: email, password: password) { result, error in
+            guard error == nil else {
+                print(error!.localizedDescription)
+                return
+            }
+            print("user signed up")
+        }
     }
 }
 
 #Preview {
-    ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    SignupView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
 }

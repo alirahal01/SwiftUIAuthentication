@@ -19,7 +19,7 @@ struct SwiftUI_Signup_firebase_cloudkitApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SignupView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

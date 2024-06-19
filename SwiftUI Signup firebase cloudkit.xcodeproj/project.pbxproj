@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9F879FA72C1CC889000C8CAA /* SwiftUI_Signup_firebase_cloudkitApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FA62C1CC889000C8CAA /* SwiftUI_Signup_firebase_cloudkitApp.swift */; };
-		9F879FA92C1CC889000C8CAA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FA82C1CC889000C8CAA /* ContentView.swift */; };
+		9F879FA92C1CC889000C8CAA /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FA82C1CC889000C8CAA /* SignupView.swift */; };
 		9F879FAB2C1CC88A000C8CAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F879FAA2C1CC88A000C8CAA /* Assets.xcassets */; };
 		9F879FAE2C1CC88A000C8CAA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F879FAD2C1CC88A000C8CAA /* Preview Assets.xcassets */; };
 		9F879FB02C1CC88A000C8CAA /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FAF2C1CC88A000C8CAA /* Persistence.swift */; };
@@ -26,6 +26,7 @@
 		9F879FEE2C21E754000C8CAA /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 9F879FED2C21E754000C8CAA /* FirebaseFirestore */; };
 		9F879FF02C21E815000C8CAA /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9F879FEF2C21E815000C8CAA /* FirebaseFirestoreCombine-Community */; };
 		9F879FF22C21E815000C8CAA /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F879FF12C21E815000C8CAA /* FirebaseFirestoreSwift */; };
+		9F879FF42C2303E3000C8CAA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FF32C2303E3000C8CAA /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,7 +49,7 @@
 /* Begin PBXFileReference section */
 		9F879FA32C1CC889000C8CAA /* SwiftUI Signup firebase cloudkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Signup firebase cloudkit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F879FA62C1CC889000C8CAA /* SwiftUI_Signup_firebase_cloudkitApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_Signup_firebase_cloudkitApp.swift; sourceTree = "<group>"; };
-		9F879FA82C1CC889000C8CAA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9F879FA82C1CC889000C8CAA /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
 		9F879FAA2C1CC88A000C8CAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F879FAD2C1CC88A000C8CAA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9F879FAF2C1CC88A000C8CAA /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		9F879FDF2C20CA67000C8CAA /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		9F879FE32C20CA95000C8CAA /* TextFieldIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldIcon.swift; sourceTree = "<group>"; };
 		9F879FE82C21E6AC000C8CAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		9F879FF32C2303E3000C8CAA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +125,8 @@
 			children = (
 				9F879FD72C1CC93E000C8CAA /* Helpers */,
 				9F879FA62C1CC889000C8CAA /* SwiftUI_Signup_firebase_cloudkitApp.swift */,
-				9F879FA82C1CC889000C8CAA /* ContentView.swift */,
+				9F879FA82C1CC889000C8CAA /* SignupView.swift */,
+				9F879FF32C2303E3000C8CAA /* ProfileView.swift */,
 				9F879FDC2C20C2EA000C8CAA /* Views */,
 				9F879FAA2C1CC88A000C8CAA /* Assets.xcassets */,
 				9F879FAF2C1CC88A000C8CAA /* Persistence.swift */,
@@ -329,9 +332,10 @@
 			files = (
 				9F879FDA2C1CC93E000C8CAA /* VisualEffectBlur.swift in Sources */,
 				9F879FE02C20CA67000C8CAA /* GradientButton.swift in Sources */,
+				9F879FF42C2303E3000C8CAA /* ProfileView.swift in Sources */,
 				9F879FDE2C20C2F8000C8CAA /* GradientText.swift in Sources */,
 				9F879FB02C1CC88A000C8CAA /* Persistence.swift in Sources */,
-				9F879FA92C1CC889000C8CAA /* ContentView.swift in Sources */,
+				9F879FA92C1CC889000C8CAA /* SignupView.swift in Sources */,
 				9F879FE42C20CA95000C8CAA /* TextFieldIcon.swift in Sources */,
 				9F879FDB2C1CC93E000C8CAA /* ImagePicker.swift in Sources */,
 				9F879FA72C1CC889000C8CAA /* SwiftUI_Signup_firebase_cloudkitApp.swift in Sources */,
