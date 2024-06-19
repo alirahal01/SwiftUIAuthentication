@@ -21,6 +21,8 @@ struct SignupView: View {
     @State private var showProfileView: Bool = false
     @State private var signUpToggle: Bool = true
     
+    @State private var rotationAngle = 0.0
+    
     private let generator = UISelectionFeedbackGenerator()
     
     var body: some View {
@@ -134,6 +136,7 @@ struct SignupView: View {
                         Button {
                             withAnimation(.easeInOut(duration: 0.7)) {
                                 signUpToggle.toggle()
+                                self.rotationAngle += 180
                             }
                         } label: {
                             Text(signUpToggle ? "Already have an account" : "Done have an account")
@@ -154,7 +157,7 @@ struct SignupView: View {
                                     .font(.footnote)
                                     .foregroundColor(.white.opacity(0.7))
                                     GradientText(text: "Reset password")
-                                    .font(.largeTitle)
+                                    .font(.footnote)
                                     .bold()
                             }
                         }
@@ -163,6 +166,10 @@ struct SignupView: View {
                 }
                 .padding(20)
             }
+            .rotation3DEffect(
+                Angle(degrees: self.rotationAngle),
+                                      axis: (x: 0.0, y: 1.0, z: 0.0)
+            )
             .background(
                 RoundedRectangle(cornerRadius: 30)
                     .stroke(.white.opacity(0.2))
@@ -173,18 +180,33 @@ struct SignupView: View {
             )
             .cornerRadius(30.0)
             .padding(.horizontal)
+            .rotation3DEffect(
+                Angle(degrees: self.rotationAngle),
+                                      axis: (x: 0.0, y: 1.0, z: 0.0)
+            )
         }
 //        .fullScreenCover(isPresented: $showProfileView) {
 //            ProfileView()
 //        }
     }
     func signup() {
-        Auth.auth().createUser(withEmail: email, password: password) { result, error in
-            guard error == nil else {
-                print(error!.localizedDescription)
-                return
+        if signUpToggle {
+            Auth.auth().createUser(withEmail: email, password: password) { result, error in
+                guard error == nil else {
+                    print(error!.localizedDescription)
+                    return
+                }
+                print("user signed up")
             }
-            print("user signed up")
+        } else {
+            Auth.auth().signIn(withEmail: email, password: password) {
+                result, error in
+                guard error == nil else {
+                    print(error!.localizedDescription)
+                    return
+                }
+                print("user is signed in")
+            }
         }
     }
 }
