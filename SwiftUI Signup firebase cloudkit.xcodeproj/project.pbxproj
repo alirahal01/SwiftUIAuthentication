@@ -27,6 +27,7 @@
 		9F879FF02C21E815000C8CAA /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 9F879FEF2C21E815000C8CAA /* FirebaseFirestoreCombine-Community */; };
 		9F879FF22C21E815000C8CAA /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9F879FF12C21E815000C8CAA /* FirebaseFirestoreSwift */; };
 		9F879FF42C2303E3000C8CAA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FF32C2303E3000C8CAA /* ProfileView.swift */; };
+		9F879FF62C231CA7000C8CAA /* SignInWithAppleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F879FF52C231CA7000C8CAA /* SignInWithAppleButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		9F879FE32C20CA95000C8CAA /* TextFieldIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldIcon.swift; sourceTree = "<group>"; };
 		9F879FE82C21E6AC000C8CAA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9F879FF32C2303E3000C8CAA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		9F879FF52C231CA7000C8CAA /* SignInWithAppleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +181,7 @@
 				9F879FDD2C20C2F8000C8CAA /* GradientText.swift */,
 				9F879FDF2C20CA67000C8CAA /* GradientButton.swift */,
 				9F879FE32C20CA95000C8CAA /* TextFieldIcon.swift */,
+				9F879FF52C231CA7000C8CAA /* SignInWithAppleButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -338,6 +341,7 @@
 				9F879FA92C1CC889000C8CAA /* SignupView.swift in Sources */,
 				9F879FE42C20CA95000C8CAA /* TextFieldIcon.swift in Sources */,
 				9F879FDB2C1CC93E000C8CAA /* ImagePicker.swift in Sources */,
+				9F879FF62C231CA7000C8CAA /* SignInWithAppleButton.swift in Sources */,
 				9F879FA72C1CC889000C8CAA /* SwiftUI_Signup_firebase_cloudkitApp.swift in Sources */,
 				9F879FB32C1CC88A000C8CAA /* SwiftUI_Signup_firebase_cloudkit.xcdatamodeld in Sources */,
 			);
